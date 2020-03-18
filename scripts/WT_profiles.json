@@ -1,0 +1,238 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{1c4de342-38b7-51cf-b940-2309a097f589}",
+
+    "profiles":
+    [
+        {
+            "acrylicOpacity": 0.5, // 透明度
+            "closeOnExit": true, // 关闭的时候退出命令终端
+            "colorScheme": "Brogrammer", // 样式配置，你们是用不了这个的，详情看我另外一篇文章
+            "commandline": "D:\\Programs\\Git\\bin\\bash.exe", // gitbash的命令行所在位置
+            "cursorColor": "#b9b9b9", // 光标颜色
+            "cursorShape": "bar", // 这个，还没发现啥作用
+            "fontFace": "FiraCode NF", // 字体配置，如果你电脑没有这个字体就不要用这段配置了
+            "fontSize": 14, // 终端字体大小
+            "guid": "{1c4de342-38b7-51cf-b940-2309a097f589}", // 唯一的标识，这个记得改成和其他的终端不一样就行了，随便起一个
+            "historySize": 9001, // emmm
+            "icon": "F:\\gwindows_logo.png", // git的图标，打开终端时候会看到
+            "name": "Git Bash", // tab栏的标题显示
+            "padding": "10, 10, 10, 10", // 边距
+            "snapOnInput": true, // emmm
+            "startingDirectory": "./", // gitbash 启动的位置（默认在C盘的用户里面的就是 ~ ）
+            "useAcrylic": true // 是否开启透明度
+        },
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "Windows PowerShell",
+            "commandline": "powershell.exe",
+            "hidden": false,
+            "fontFace": "FiraCode NF",
+            "useAcrylic": true,
+            "cursorShape": "bar",
+            "startingDirectory": "./",
+            "acrylicOpacity": 0.5,
+            "snapOnInput": true,
+            "cursorColor": "#FFFFFF",
+            "fontSize": 14
+        },
+        {
+            // Make changes here to the cmd.exe profile
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "hidden": false,
+            "fontFace": "FiraCode NF",
+            "useAcrylic": true,
+            "cursorShape": "bar",
+            "startingDirectory": "./",
+            "acrylicOpacity": 0.5,
+            "snapOnInput": true,
+            "fontSize": 14
+        },
+        {
+            "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+            "hidden": false,
+            "name": "Ubuntu-18.04",
+            "source": "Windows.Terminal.Wsl",
+            "useAcrylic": true,
+            "cursorShape": "bar",
+            "fontFace": "FiraCode NF",
+            "acrylicOpacity": 0.5,
+            "snapOnInput": true,
+            "colorScheme": "Ubuntu",
+            "closeOnExit": true,
+            "cursorColor": "#bbbbbb",
+            "fontSize": 14
+            //"icon": "F:\\ubuntu.jpg"
+        },
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": true,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure"
+        },
+        {
+            "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
+            "hidden": false,
+            "name": "Arch",
+            "source": "Windows.Terminal.Wsl",
+            "colorScheme": "Ubuntu",
+            "fontFace": "FiraCode NF",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.5,
+            "cursorShape": "bar",
+            "snapOnInput": true,
+            "cursorColor": "#bbbbbb",
+            "fontSize": 14
+        }
+    ],
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "JetBrains Darcula",
+            "black": "#000000",
+            "red": "#fa5355",
+            "green": "#126e00",
+            "yellow": "#c2c300",
+            "blue": "#4581eb",
+            "purple": "#fa54ff",
+            "cyan": "#33c2c1",
+            "white": "#adadad",
+            "brightBlack": "#555555",
+            "brightRed": "#fb7172",
+            "brightGreen": "#67ff4f",
+            "brightYellow": "#ffff00",
+            "brightBlue": "#6d9df1",
+            "brightPurple": "#fb82ff",
+            "brightCyan": "#60d3d1",
+            "brightWhite": "#eeeeee",
+            "background": "#202020",
+            "foreground": "#adadad"
+        },
+        {
+            "name": "Parasio Dark",
+            "black": "#2f1e2e",
+            "red": "#ef6155",
+            "green": "#48b685",
+            "yellow": "#fec418",
+            "blue": "#06b6ef",
+            "purple": "#815ba4",
+            "cyan": "#5bc4bf",
+            "white": "#a39e9b",
+            "brightBlack": "#776e71",
+            "brightRed": "#ef6155",
+            "brightGreen": "#48b685",
+            "brightYellow": "#fec418",
+            "brightBlue": "#06b6ef",
+            "brightPurple": "#815ba4",
+            "brightCyan": "#5bc4bf",
+            "brightWhite": "#e7e9db",
+            "background": "#2f1e2e",
+            "foreground": "#a39e9b"
+        },
+        {
+            "name": "Ubuntu",
+            "black": "#2e3436",
+            "red": "#cc0000",
+            "green": "#4e9a06",
+            "yellow": "#c4a000",
+            "blue": "#3465a4",
+            "purple": "#75507b",
+            "cyan": "#06989a",
+            "white": "#d3d7cf",
+            "brightBlack": "#555753",
+            "brightRed": "#ef2929",
+            "brightGreen": "#8ae234",
+            "brightYellow": "#fce94f",
+            "brightBlue": "#729fcf",
+            "brightPurple": "#ad7fa8",
+            "brightCyan": "#34e2e2",
+            "brightWhite": "#eeeeec",
+            "background": "#300a24",
+            "foreground": "#eeeeec"
+        },
+        
+        {
+            "name": "Brogrammer",
+            "black": "#1f1f1f",
+            "red": "#f81118",
+            "green": "#2dc55e",
+            "yellow": "#ecba0f",
+            "blue": "#2a84d2",
+            "purple": "#4e5ab7",
+            "cyan": "#1081d6",
+            "white": "#d6dbe5",
+            "brightBlack": "#d6dbe5",
+            "brightRed": "#de352e",
+            "brightGreen": "#1dd361",
+            "brightYellow": "#f3bd09",
+            "brightBlue": "#1081d6",
+            "brightPurple": "#5350b9",
+            "brightCyan": "#0f7ddb",
+            "brightWhite": "#ffffff",
+            "background": "#131313",
+            "foreground": "#d6dbe5"
+        }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        { "command": "closePane", "keys": [ "ctrl+shift+w" ] },
+        { "command": "closeWindow", "keys": [ "alt+f4" ] },
+        { "command": "copy", "keys": [ "ctrl+shift+c" ] },
+        { "command": "decreaseFontSize", "keys": [ "ctrl+-" ] },
+        { "command": "duplicateTab", "keys": [ "ctrl+shift+d" ] },
+        { "command": "increaseFontSize", "keys": [ "ctrl+=" ] },
+        { "command": { "action": "moveFocus", "direction": "down" }, "keys": [ "alt+down" ] },
+        { "command": { "action": "moveFocus", "direction": "left" }, "keys": [ "alt+left" ] },
+        { "command": { "action": "moveFocus", "direction": "right" }, "keys": [ "alt+right" ] },
+        { "command": { "action": "moveFocus", "direction": "up" }, "keys": [ "alt+up" ] },
+        { "command": "newTab", "keys": [ "ctrl+shift+t" ] },
+        { "command": { "action": "newTab", "index": 0 }, "keys": ["ctrl+shift+1"] },
+        { "command": { "action": "newTab", "index": 1 }, "keys": ["ctrl+shift+2"] },
+        { "command": { "action": "newTab", "index": 2 }, "keys": ["ctrl+shift+3"] },
+        { "command": { "action": "newTab", "index": 3 }, "keys": ["ctrl+shift+4"] },
+        { "command": { "action": "newTab", "index": 4 }, "keys": ["ctrl+shift+5"] },
+        { "command": { "action": "newTab", "index": 5 }, "keys": ["ctrl+shift+6"] },
+        { "command": { "action": "newTab", "index": 6 }, "keys": ["ctrl+shift+7"] },
+        { "command": { "action": "newTab", "index": 7 }, "keys": ["ctrl+shift+8"] },
+        { "command": { "action": "newTab", "index": 8 }, "keys": ["ctrl+shift+9"] },
+        { "command": "nextTab", "keys": [ "ctrl+tab" ] },
+        { "command": "openNewTabDropdown", "keys": [ "ctrl+shift+space" ] },
+        { "command": "openSettings", "keys": [ "ctrl+," ] },
+        { "command": "paste", "keys": [ "ctrl+shift+v" ] },
+        { "command": "prevTab", "keys": [ "ctrl+shift+tab" ] },
+        { "command": "resetFontSize", "keys": ["ctrl+0"]},
+        { "command": { "action": "resizePane", "direction": "down" }, "keys": [ "alt+shift+down" ] },
+        { "command": { "action": "resizePane", "direction": "left" }, "keys": [ "alt+shift+left" ] },
+        { "command": { "action": "resizePane", "direction": "right" }, "keys": [ "alt+shift+right" ] },
+        { "command": { "action": "resizePane", "direction": "up" }, "keys": [ "alt+shift+up" ] },
+        { "command": "scrollDown", "keys": [ "ctrl+shift+down" ] },
+        { "command": "scrollDownPage", "keys": [ "ctrl+shift+pgdn" ] },
+        { "command": "scrollUp", "keys": [ "ctrl+shift+up" ] },
+        { "command": "scrollUpPage", "keys": [ "ctrl+shift+pgup" ] },
+        { "command": { "action": "splitPane", "split": "horizontal"}, "keys": [ "alt+shift+-" ] },
+        { "command": { "action": "splitPane", "split": "vertical"}, "keys": [ "alt+shift+plus" ] },
+        { "command": { "action": "switchToTab", "index": 0 }, "keys": ["ctrl+alt+1"] },
+        { "command": { "action": "switchToTab", "index": 1 }, "keys": ["ctrl+alt+2"] },
+        { "command": { "action": "switchToTab", "index": 2 }, "keys": ["ctrl+alt+3"] },
+        { "command": { "action": "switchToTab", "index": 3 }, "keys": ["ctrl+alt+4"] },
+        { "command": { "action": "switchToTab", "index": 4 }, "keys": ["ctrl+alt+5"] },
+        { "command": { "action": "switchToTab", "index": 5 }, "keys": ["ctrl+alt+6"] },
+        { "command": { "action": "switchToTab", "index": 6 }, "keys": ["ctrl+alt+7"] },
+        { "command": { "action": "switchToTab", "index": 7 }, "keys": ["ctrl+alt+8"] },
+        { "command": { "action": "switchToTab", "index": 8 }, "keys": ["ctrl+alt+9"] },
+        { "command": "find", "keys": [ "ctrl+shift+f" ] },
+        { "command": "toggleFullscreen", "keys": [ "alt+enter" ] },
+        { "command": "toggleFullscreen", "keys": [ "f11" ] }
+    ]
+}
